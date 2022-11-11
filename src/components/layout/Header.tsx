@@ -20,7 +20,7 @@ const links: Links = [
     label: 'Services',
   },
   {
-    href: '/',
+    href: '/shop',
     type: 'a',
     label: 'Shop',
   },
@@ -57,7 +57,7 @@ export default function Header() {
       {buttonLinks.map(({ href, label, type, buttonStyle: style }) => (
         <div key={label}>
           {type === 'a' ? (
-            <UnstyledLink href={href} className='hover:text-gray-600 '>
+            <UnstyledLink href={href} className='hover:text-gray-500 '>
               {label}
             </UnstyledLink>
           ) : (
@@ -75,7 +75,7 @@ export default function Header() {
           {type === 'a' ? (
             <UnstyledLink
               href={href}
-              className='ml-3 text-sm text-charcoal hover:text-gray-600'
+              className='ml-3 text-sm text-charcoal hover:text-gray-500'
             >
               {label}
             </UnstyledLink>
@@ -93,12 +93,12 @@ export default function Header() {
           <TbPlant2 className='h-6 w-6 cursor-pointer rounded-lg border-2 p-1 text-charcoal md:h-10 md:w-10' />
           <UnstyledLink
             href='/'
-            className='font-bold text-charcoal hover:text-gray-300'
+            className='font-bold text-charcoal hover:text-gray-500'
           >
             HOMESKINCARE
           </UnstyledLink>
 
-          <ul className='hidden items-center md:grid md:auto-cols-fr md:grid-flow-col md:gap-2'>
+          <ul className='hidden items-center justify-items-center md:grid md:auto-cols-fr md:grid-flow-col md:gap-2'>
             {navLinks}
           </ul>
         </div>
@@ -133,7 +133,10 @@ export default function Header() {
                   onClick={closeDrawer}
                 />
               </div>
-              <ul className='grid items-center gap-3'>{navLinks}</ul>
+              <ul className='grid items-center gap-3'>
+                {navLinks}
+                {navButton}
+              </ul>
             </Drawer>
           </div>
         </nav>
