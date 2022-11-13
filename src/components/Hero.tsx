@@ -4,8 +4,8 @@ import React from 'react';
 
 export const Hero = () => {
   return (
-    <section className='relative grid h-[300px] content-center justify-items-center md:h-[600px] lg:h-[800px]'>
-      <article className='layout z-10 mb-16 flex flex-col items-center space-y-4'>
+    <section className='relative grid h-[600px] content-center justify-items-center md:h-[600px] lg:h-[800px]'>
+      <article className='layout z-10 mb-16 flex flex-col items-center space-y-4 md:space-y-6'>
         <h2 className='text-center text-white md:text-4xl lg:text-5xl'>
           HOME SKINCARE
         </h2>
@@ -15,7 +15,10 @@ export const Hero = () => {
           efficitur vulputate.
         </p>
         <div className='grid'>
-          <Link href='/shop' className='buttonContained'>
+          <Link
+            href='/shop'
+            className='buttonContained rounded-full bg-gradient-to-t from-charcoal to-[#595b60] py-4 px-8'
+          >
             Shop Now
           </Link>
         </div>

@@ -88,7 +88,7 @@ export default function Header() {
   );
   return (
     <header className='sticky top-0 z-50 bg-white'>
-      <div className='layout flex h-14 items-center justify-between'>
+      <div className='layout flex h-16 items-center justify-between'>
         <div className='flex h-full items-center space-x-2'>
           <TbPlant2 className='h-6 w-6 cursor-pointer rounded-lg border-2 p-1 text-charcoal md:h-10 md:w-10' />
           <UnstyledLink

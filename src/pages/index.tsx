@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { Hero } from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
+import OurService from '@/components/OurService';
 import Seo from '@/components/Seo';
 
 /**
@@ -23,7 +24,9 @@ export default function HomePage() {
       <Seo />
 
       <Hero />
-      <main className='layout'>...</main>
+      <main className='layout'>
+        <OurService />
+      </main>
     </Layout>
   );
 }
