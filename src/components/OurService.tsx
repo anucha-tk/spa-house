@@ -9,7 +9,7 @@ export default function OurService() {
       path: '/images/spa_therapy-2.jpg',
       content:
         'Sed egestas quam sed dui semper, et mollis risus scelerisque. Vestibulum bibendum tellus sit amet sodales rutrum. Vivamus ultrices sapien blandit neque lacinia euismod.',
-      link: '/',
+      link: '/services/spa-therapy',
     },
     {
       name: 'GIFT CARD',
@@ -51,9 +51,8 @@ export default function OurService() {
               <Image
                 alt={service.name}
                 src={service.path}
-                objectFit='cover'
-                layout='fill'
-                objectPosition='bottom'
+                fill
+                className='object-cover object-bottom'
               />
             </div>
             <div className='mb-8 grid content-start items-center gap-2 text-center'>

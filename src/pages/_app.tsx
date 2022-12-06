@@ -2,6 +2,8 @@ import { AppProps } from 'next/app';
 
 import '@/styles/colors.css';
 import '@/styles/globals.css';
+
+import Header from '@/components/layout/Header';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 
 /**
@@ -10,7 +12,12 @@ import '@/styles/globals.css';
  */
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

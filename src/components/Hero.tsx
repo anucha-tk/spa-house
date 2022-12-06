@@ -27,9 +27,8 @@ export const Hero = () => {
         <Image
           src='/images/hero.png'
           alt='couple_watch'
-          layout='fill'
-          objectFit='cover'
-          objectPosition='top'
+          fill
+          className='object-cover'
         />
       </div>
     </section>
